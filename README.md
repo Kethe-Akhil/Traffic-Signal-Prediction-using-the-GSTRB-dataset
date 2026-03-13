@@ -1,0 +1,1 @@
+Traffic Sign Recognition is a deep learning project that classifies road signs using a trained CNN model. The application integrates computer vision techniques for image preprocessing and is deployed as a web app using Streamlit, enabling users to capture or upload images and receive instant predictions
