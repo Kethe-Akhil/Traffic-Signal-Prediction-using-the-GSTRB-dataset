@@ -52,7 +52,7 @@ classes = { 0:'Speed limit (20km/h)',
             41:'End of no passing', 
             42:'End no passing veh > 3.5 tons'
           }
-model = load_model("traffic_signals.keras", compile=False, safe_mode=False)
+model = load_model("traffic_signals.keras", compile=False)
 
 st.title("Traffic Sign Recognition")
 img_file_buffer = st.camera_input("Take a picture")
