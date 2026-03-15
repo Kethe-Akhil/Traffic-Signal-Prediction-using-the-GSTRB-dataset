@@ -72,6 +72,9 @@ model = load_model("traffic_signals.keras")
 
 st.title("Traffic Sign Recognition")
 
+os.makedirs("images", exist_ok=True)
+
+
 img_file_buffer = st.camera_input("Take a picture")
 filename=f"images/img_{datetime.now().timestamp()}.jpg"
 
