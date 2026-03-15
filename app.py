@@ -55,7 +55,13 @@ classes = { 0:'Speed limit (20km/h)',
 model = load_model("traffic_signals.keras", compile=False)
 
 st.title("Traffic Sign Recognition")
-img_file_buffer = st.camera_input("Take a picture")
+option = st.radio("Select Input Method", ["Take Photo", "Upload Image"])
+
+if option == "Take Photo":
+    img_file_buffer = st.camera_input("Take a picture")
+
+else:
+    img_file_buffer = st.file_uploader("Upload a traffic sign image", type=["jpg","png","jpeg"])
 
 if img_file_buffer is not None:
 
